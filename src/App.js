@@ -1,9 +1,18 @@
+import React from "react";
+import TableHead from "./components/TableHead.js";
+import TableFoot from "./components/TableFoot.js";
+import TableBody from "./components/TableBody.js";
+
 function App() {
   return (
     <div className="App">
-      <h1>Heroes of Faith Table</h1>
+      <table className="tabela">
+        <TableHead />
+        <TableFoot />
+        <TableBody />
+      </table>
     </div>
   );
-}
+};
 
 export default App;
