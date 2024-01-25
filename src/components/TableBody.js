@@ -1,15 +1,17 @@
 import React from "react";
 
-const TableBody = () => (
+const TableBody = props => (
     <tbody>
-        <tr>
-            <td>Abraham</td>
-            <td>Genesis</td>
-            <td>Old</td>
-            <td>
-                <button className="botao remover">Remove</button>
-            </td>
-        </tr>
+        { props.heroes.map( (heroe, index ) => (
+            <tr key={ heroe.id }>
+                <td>{ heroe.name }</td>
+                <td>{ heroe.book }</td>
+                <td>{ heroe.testament }</td>
+                <td>
+                    <button className="botao remover">Remove</button>
+                </td>
+            </tr>
+        ))}
     </tbody>
 );
 
