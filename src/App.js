@@ -5,33 +5,25 @@ import TableBody from "./components/TableBody.js";
 
 class App extends Component {
   state = {
-    heroes: [
-      {
-        id: "1",
-        name: "Abel",
-        book: "Genesis",
-        testament: "Old"
-      },
-      {
-        id: "2",
-        name: "Enoch",
-        book: "Genesis",
-        testament: "Old"
-      },
-      {
-        id: "3",
-        name: "Noah",
-        book: "Genesis",
-        testament: "Old"
-      }
-    ]
+    heroes: []
   };
+  componentDidMount() {
+    fetch("/api/heroes.json")
+    .then(response => response.json())
+    .then(heroes => this.setState({ heroes }))
+    .catch(function(error) {
+      console.log("Request error");
+    })
+    .finally(function() {
+      console.log("Always return");
+    });
+  }
   render() {
     return (
     <div className="App">
       <table className="tabela">
         <TableHead />
-        <TableFoot />
+        <TableFoot nbrHeroes = { this.state.heroes.length } />
         <TableBody heroes={ this.state.heroes } />
       </table>
     </div>
