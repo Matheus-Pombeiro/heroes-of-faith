@@ -17,14 +17,21 @@ class App extends Component {
     .finally(function() {
       console.log("Always return");
     });
-  }
+  };
+  handleRemoveRow = (id) => {
+    const heroes = this.state.heroes.filter(h => h.id !== id);
+    this.setState({ heroes });
+  };
   render() {
     return (
     <div className="App">
       <table className="tabela">
         <TableHead />
         <TableFoot nbrHeroes = { this.state.heroes.length } />
-        <TableBody heroes={ this.state.heroes } />
+        <TableBody 
+          heroes = { this.state.heroes }
+          removeRow = { this.handleRemoveRow }
+        />
       </table>
     </div>
   );

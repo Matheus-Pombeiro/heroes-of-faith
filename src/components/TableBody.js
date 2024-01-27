@@ -1,6 +1,6 @@
 import React from "react";
 
-const TableBody = props => (
+const TableBody = (props) => (
     <tbody>
         { props.heroes.map( (heroe, index ) => (
             <tr key={ heroe.id }>
@@ -8,7 +8,11 @@ const TableBody = props => (
                 <td>{ heroe.book }</td>
                 <td>{ heroe.testament }</td>
                 <td>
-                    <button className="botao remover">Remove</button>
+                    <button 
+                        className="botao remover"
+                        onClick={ () => props.removeRow(heroe.id) }
+                        id={ heroe.id }
+                    >Remove</button>
                 </td>
             </tr>
         ))}
