@@ -1,0 +1,98 @@
+[
+    {
+        "id": "1",
+        "name": "Abel",
+        "book": "Genesis",
+        "testament": "Old"
+    },
+    {
+        "id": "2",
+        "name": "Enoch",
+        "book": "Genesis",
+        "testament": "Old"
+    },
+    {
+        "id": "3",
+        "name": "Noah",
+        "book": "Genesis",
+        "testament": "Old"
+    },
+    {
+        "id": "4",
+        "name": "Abraham",
+        "book": "Genesis",
+        "testament": "Old" 
+    },
+    {
+        "id": "5",
+        "name": "Sarah",
+        "book": "Genesis",
+        "testament": "Old"
+    },
+    {
+        "id": "6",
+        "name": "Isaac",
+        "book": "Genesis",
+        "testament": "Old"
+    },
+    {
+        "id": "7",
+        "name": "Jacob",
+        "book": "Genesis",
+        "testament": "Old" 
+    },
+    {
+        "id": "8",
+        "name": "Joseph",
+        "book": "Genesis",
+        "testament": "Old"
+    },
+    {
+        "id": "9",
+        "name": "Moses",
+        "book": "Genesis",
+        "testament": "Old"
+    },
+    {
+        "id": "10",
+        "name": "Rahab",
+        "book": "Joshua",
+        "testament": "Old"
+    },
+    {
+        "id": "11",
+        "name": "Gideon",
+        "book": "Jugdes",
+        "testament": "Old"
+    },
+    {
+        "id": "12",
+        "name": "Barak",
+        "book": "Jugdes",
+        "testament": "Old"
+    },
+    {
+        "id": "13",
+        "name": "Samson",
+        "book": "Jugdes",
+        "testament": "Old"
+    },
+    {
+        "id": "14",
+        "name": "Jephthah",
+        "book": "Jugdes",
+        "testament": "Old"
+    },
+    {
+        "id": "15",
+        "name": "Samuel",
+        "book": "1 Samuel",
+        "testament": "Old"
+    },
+    {
+        "id": "16",
+        "name": "David",
+        "book": "1 Samuel",
+        "testament": "Old"
+    }
+]
