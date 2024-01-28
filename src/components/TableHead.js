@@ -3,7 +3,7 @@ import React from "react";
 const TableHead = (props) => (
     <thead>
         <tr>
-            <th colSpan="4">Heros of Faith Table</th>
+            <th colSpan="4">Heroes of Faith Table</th>
         </tr>
         <tr>
             <th>Name
