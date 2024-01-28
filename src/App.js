@@ -22,11 +22,23 @@ class App extends Component {
     const heroes = this.state.heroes.filter(h => h.id !== id);
     this.setState({ heroes });
   };
+  handleSortCrescent = (name) => {
+    const heroes = this.state.heroes.sort((a, b) => a.name < b.name ? -1 : 0);
+    this.setState({ heroes });
+  };
+  handleSortDecrescent = (name) => {
+    const heroes = this.state.heroes.sort((a, b) => a.name < b.name ? -1 : 0);
+    heroes.reverse();
+    this.setState({ heroes });
+  };
   render() {
     return (
     <div className="App">
       <table className="tabela">
-        <TableHead />
+        <TableHead 
+          sortCrescent = { this.handleSortCrescent }
+          sortDecrescent = { this.handleSortDecrescent }
+        />
         <TableFoot nbrHeroes = { this.state.heroes.length } />
         <TableBody 
           heroes = { this.state.heroes }
